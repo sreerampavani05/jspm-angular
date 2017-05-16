@@ -1,0 +1,36 @@
+{
+  "devPath": "dev",
+  "devJspmPackages": "dev/jspm_packages",
+  "livereloadPort": 35729,
+  "componentsFolderPath": "dev/components",
+  "jspm": {
+    "appModule": "dev/app.module",
+    "vendorsNg": [
+      "angular",
+      "angular-material",
+      "angular-upload",
+      "angular-busy/dist/angular-busy",
+      "angular-messages",
+      "angular-animate",
+      "angular-sanitize",
+      "angular-gettext",
+      "angular-mocks",
+      "nvd3",
+      "angular-sanitize",
+      "angular-ui-router",
+      "ngTasty",
+      "ngTasty/ng-tasty-tpls",
+      "ngStorage",
+      "angular-ui-tree",
+      "textangular",
+      "angular-ckeditor"
+    ],
+    "vendors": [
+      "font-awesome",
+      "lodash",
+      "moment/moment",
+      "rangy",
+      "libphonenumber"
+    ]
+  }
+}

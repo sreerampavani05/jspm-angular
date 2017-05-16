@@ -56,8 +56,17 @@
     }
   },
   "devDependencies": {
+    "connect-livereload": "^0.6.0",
+    "grunt": "^1.0.1",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
     "jspm": "^0.16.53",
-    "jspm-git": "^0.6.0"
+    "jspm-git": "^0.6.0",
+    "load-grunt-config": "^0.19.2",
+    "lodash": "^4.17.4",
+    "serve-static": "^1.12.2"
   },
   "scripts": {
     "postinstall": "jspm install"

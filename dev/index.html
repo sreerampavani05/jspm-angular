@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Retailer Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="author" content="sreerama pavani">
     <meta name="description" content="Portal developed with AngularJS, Spring and Java 8">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="styles.css" type="text/css" rel="stylesheet" media="screen">
 </head>
 <body>
-    <h1>Hello World!!!</h1>
+    <div layout="column" ui-view class="full-height">
+        <img class="center" src="./images/loading.gif" />
+    </div>
+    <div class="hide no-frame" translate>Ooops, you cannot run application in iframe!</div>
+    <script src="jspm_packages/system.js"></script>
+    <script src="jspm.conf.js"></script>
+    <script>
+        System.import('app.module')
+                .then(function(){
+                    if(self === top){
+                        angular.bootstrap(document.body,['app']);
+                    }else{
+                        angular.element(document.querySelectorAll('.no-frame')).removeClass('hide');
+                    }
+                }).then(function () {
+                    console.log('angular is bootstrapped by SystemJs');
+                })
+                .catch(function (err) {
+                    console.log(err);
+                });
+    </script>
 </body>
 </html>
