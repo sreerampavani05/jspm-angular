@@ -14,8 +14,6 @@ dev/translations.js
 /dev/config
 /dev/external
 /dev/jspm.conf.js
-/config/grunt.conf.json
-/config/jspm.conf.js
 /dev/components/.+/jsconfig.json
 /dev/components/jsconfig.json
 dev/components/lsp-core/components/lsp-main/components/app/translations.js
